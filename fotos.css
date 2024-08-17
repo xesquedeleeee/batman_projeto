@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.fotos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.foto{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.foto:hover{
+    transform: scale(1.04);
+}
+
+.foto-1{
+    background-image: url('https://cdn.ome.lt/_97CT6lQu5JJz1m5Aa4y-YxcabA=/1200x630/smart/extras/conteudos/thebat.png');
+}
+
+.foto-2{
+    background-image: url('https://blogs.uai.com.br/opipoqueiro/wp-content/uploads/sites/54/2022/02/Batman-02.jpg');
+}
+
+.foto-3{
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/matt-reeves-set-batman_ws8n.jpg');
+}
+
+.foto-4{
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman1.png?w=837');
+}
+
+.foto-5{
+    background-image: url('https://t.ctcdn.com.br/N9XDrxourhHS_agrtACGDZ31mkQ=/1920x1080/smart/i362398.jpeg');
+}
+
+.foto-6{
+    background-image: url('https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-jeffrey-wright-robert-pattison-foto-divulgacao-warner-bros_fixed_large.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .fotos-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
